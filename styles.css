@@ -1,0 +1,151 @@
+body {
+    font-size:20px;
+    background: url(images/email-pattern.png);
+    background-repeat: repeat;
+}
+
+h1 {
+    margin-left:5%;
+}
+
+h1:hover {
+    color:#1F50EA;
+}
+
+
+.buttons {
+    margin-left: 5%;
+}
+
+.GetButton, .change, .delete {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.05s;
+}
+
+.GetButton:hover { 
+    background: rgb(53, 167, 110); 
+}
+.GetButton:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.change {
+    background: #1F50EA;;
+    box-shadow: 0 -3px #8B8FF6 inset;
+    
+}
+
+.delete {
+    background: #EB2A0F;
+    box-shadow: 0 -3px #FF5672 inset;
+}
+
+
+
+.books, .title, .data, .someInfo {
+    max-width:40%;
+    max-height: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:white;
+}
+
+.books {
+    margin-top:2%;
+    margin-left:2%;
+    padding:1%;
+}
+
+.title, .data, .someInfo, .add, .cancel {
+    margin:5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 2%;
+    padding:1%;
+}
+
+.title, .data, .someInfo, .add, .cancel {
+    left:30%;
+}
+
+.add, .cancel {
+    font-weight: 700;
+    font-size: 18px;
+    margin:0%;
+    margin-left:5%;
+}
+
+.add {
+    color:black;
+    background: #9aece8;
+    box-shadow: 0 -3px #793dc733 inset;
+}
+
+.cancel {
+    background: #3fffaf;
+    box-shadow: 0 -3px #1ae29533 inset;
+}
+
+.change:hover { 
+    background: rgb(53, 167, 110); 
+}
+.change:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.delete:hover { 
+    background: rgb(53, 167, 110); 
+}
+.delete:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.add1:hover { 
+    background: rgb(53, 167, 110); 
+}
+.add:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.cancel:hover { 
+    background: rgb(53, 167, 110); 
+}
+.cancel:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.dataArea {
+    padding: 2rem;
+    background-color: white;
+    position: fixed;
+    top: 30%;
+    left:50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.dataArea > div {
+    max-width: 100%;
+}
+.dataArea > div > input {
+    max-width: 200px;
+    width: 100%;
+}
+footer {
+    position: relative;
+    top:95%;
+    left:20%;
+    max-width:50%;
+}
+
