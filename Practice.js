@@ -18,7 +18,7 @@ let cancelChanges = document.querySelector('.cancel');
 //Запрос для кнопки getInfo
 function getbooks(callback){
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://fakerestapi.azurewebsites.net/api/books'); //настраиваем запрос данных
+    xhr.open('GET', 'https://fakerestapi.azurewebsites.net/api/books'); //настраиваем запрос данных
 
     xhr.addEventListener('load', () => {
     const response = JSON.parse(xhr.responseText); //создаем массив данных 
@@ -58,7 +58,7 @@ const mountBooks = (arr) => {   //массив объектов книг
             if (innerIndex1 === index) { //если индекс кнопки удаления === id div, то del
                 node.remove();
                 const xhr = new XMLHttpRequest();
-                xhr.open('DELETE', `http://fakerestapi.azurewebsites.net/api/books/${innerIndex1}`);
+                xhr.open('DELETE', `https://fakerestapi.azurewebsites.net/api/books/${innerIndex1}`);
                 xhr.send();  
                 console.log(`num${index} deleted succesfully`);          
             };    
@@ -86,7 +86,7 @@ cancelChanges.addEventListener('click', () => {   //при нажатии уда
 //Запрос для кнопки add
 function putBooks() {
     const xhr = new XMLHttpRequest();
-    xhr.open('PUT', `http://fakerestapi.azurewebsites.net/api/books/${changedData.ID}`); //настраиваем запрос данных
+    xhr.open('PUT', `https://fakerestapi.azurewebsites.net/api/books/${changedData.ID}`); //настраиваем запрос данных
 
     xhr.addEventListener('load', () => {  //создаем массив данных 
     const response = JSON.parse(xhr.responseText); 
