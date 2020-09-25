@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Practice on pure JS</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
+            <h1>Creating some template</h1>
+<div class="buttons">
+            <button name="button" id="GetButton" class="GetButton" onclick="getbooks()">Get information</button>
+</div>
+
+<div class="booksWrapper">
+
+</div>
+  <div class="dataArea">
+            <div class="title">
+                <label for="title">Title</label><input name="Title" type="text" id="title" class="title" onclick='checkParams()'>
+        
+            </div>
+
+            <div class="data">
+                <label for="data">Description</label><input name="Description" type="text" id="data" class="data" onclick='checkParams()'>
+            </div>
+
+            <div class="someInfo">
+                <label for="someInfo">Excerpt</label><input name="Excerpt" type="text" id="someInfo" class='someInfo' onclick='checkParams()'>
+            </div>
+
+            <div class="btns">
+                <button name="add" id="add" class="add" disabled onclick="putBooks()">Add info</button>
+
+                <button name="cancel" id="cancel" class="cancel">Cancel changes</button>
+            </div>
+  </div>
+        <footer>(C) Some footer for my Project</footer>
+        
+        <script src='./Practice.js'></script> 
+    </body>
+</html>
